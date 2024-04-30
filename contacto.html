@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Solicitud de Servicios Logísticos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bheader">
+      <h1><a href="index.html">TRANSLOGIC S.A.</a></h1>
+      <nav>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a href="areas.html">Áreas de actuación</a>
+            <ul>
+              <li><a href="#">Transporte</a></li>
+              <li><a href="#">Almacenamiento</a></li>
+              <li><a href="#">Gestión de Inventarios</a></li>
+              <li><a href="#">Procesamiento de Pedidos</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="quienes_somos.html">Quienes somos</a>
+            <ul>
+              <li><a href="#">Misión</a></li>
+              <li><a href="#">Valor</a></li>
+              <li><a href="#">Visión</a></li>
+            </ul>
+          </li>
+          <li><a href="contacto.html">Formulario de contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <form class="formulario-inscripcion" action="#" method="post">
+      <div class="fondo">
+        <div class="formulario-seccion requisitos-acceso">
+          <h5>
+            Para proceder con su solicitud de servicios logísticos, por favor
+            proporcione la siguiente información y confirme que cumple con los
+            requisitos necesarios. Esta información nos ayudará a entender mejor
+            sus necesidades y a diseñar una solución logística a medida para su
+            empresa.
+          </h5>
+        </div>
+
+        <div class="formulario-seccion">
+          <h2 class="informacion-cliente">Información del Cliente:</h2>
+          <br />
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+          </div>
+
+          <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required />
+          </div>
+          <div>
+            <label for="documento"
+              >Documento de identidad (DNI, NIE, PASAPORTE):</label
+            >
+            <input type="text" id="documento" name="documento" required />
+          </div>
+          <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required />
+          </div>
+          <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required />
+          </div>
+        </div>
+
+        <div class="formulario-seccion datos-personales">
+          <h2 class="informacion-cliente">Detalles del Servicio Requerido:</h2>
+          <br />
+          <label for="descripcion-productos"
+            >Descripción general de los productos a transportar:</label
+          >
+          <br /><textarea
+            name="descripcion-productos"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <label for="volumen-estimado">Volumen estimado:</label>
+          <select name="volumen-estimado" id="">
+            <option value="1">0-100kg</option>
+            <option value="2">100-300kg</option>
+            <option value="3">300-600kg</option>
+            <option value="4">Mas de 600kg</option>
+          </select>
+          <br />
+          <label for="destinos-envio">Destinos de envío:</label>
+          <select name="destinos-envio" id="">
+            <option value="1">España</option>
+            <option value="2">Portugal</option>
+            <option value="3">Italia</option>
+            <option value="4">Francia</option>
+          </select>
+        </div>
+
+        <div class="formulario-seccion datos-personales">
+          <h2 class="informacion-cliente">
+            Requisitos de Seguridad y Cumplimiento:
+          </h2>
+          <br />
+          <label for="nombre"
+            >Confirmación de que los productos a transportar cumplen con todas
+            las regulaciones locales, nacionales e internacionales
+            pertinentes.</label
+          >
+          <br /><input type="Radio" name="FP" id="" value="SI" />SI <br /><input
+            type="Radio"
+            name="FP"
+            id=""
+            value="NO"
+          />NO
+          <br />
+          <br />
+          <label for="nombre"
+            >Documentación necesaria para la importación/exportación, si
+            corresponde.</label
+          >
+          <input
+            type="file"
+            name=""
+            id=""
+            value="Adjuntar archivo"
+            accept=".pdf"
+            multiple
+          />
+        </div>
+
+        <div class="formulario-seccion datos-personales">
+          <h2 class="informacion-cliente">Compromisos de Servicio:</h2>
+          <br />
+          <label for="nombre"
+            >Fecha deseada para el inicio de los servicios logísticos.</label
+          >
+          <br />
+          <input
+            type="datetime-local"
+            id="Fecha de inicio:"
+            name="Fecha de inicio "
+            required
+          />
+          <br />
+          <br />
+          <label for="nombre"
+            >Seleccione su preferencias de modalidad de transporte:</label
+          >
+          <br /><input type="Radio" name="FP" id="" value="Aéreo" />Aéreo
+          <br /><input type="Radio" name="FP" id="" value="Marítimo" />Marítimo
+          <br /><input
+            type="Radio"
+            name="FP"
+            id=""
+            value="Terrestre"
+          />Terrestre
+        </div>
+
+        <div class="formulario-seccion requisitos-acceso">
+          <h5>
+            Al enviar esta solicitud, usted afirma que la información
+            proporcionada es precisa y completa, y autoriza a utilizar estos
+            datos para preparar una propuesta de servicio personalizada.
+            Comprende que este formulario es una solicitud de información.
+          </h5>
+        </div>
+      </div>
+
+      <footer>
+        <input type="submit" value="Enviar Solicitud" />
+        <p class="bfooter">
+          © 2024 Empresa de Logística. Todos los derechos reservados.
+        </p>
+      </footer>
+    </form>
+  </body>
+</html>

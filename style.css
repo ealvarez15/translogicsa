@@ -1,0 +1,301 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .bheader {
+    height: 140px;
+    margin: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #007bff;
+  }
+  h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  header h1 {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  ul {
+    list-style: none;
+  }
+  nav {
+    margin: auto;
+    width: 577px;
+  }
+
+  .nav li a {
+    background-color: #007bff;
+    color: azure;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+  }
+
+  .nav li a:hover {
+    background-color: #56a8ff;
+  }
+
+  .nav > li {
+    float: left;
+  }
+
+  .nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 150px;
+  }
+
+  .nav li:hover > ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    position: relative;
+  }
+
+  .nav li ul li ul {
+    right: -150px;
+    top: 0px;
+  }
+
+  
+  aside h1,
+  aside h2,
+  aside h3,
+  aside p {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    color: #080808;
+  }
+
+  footer {
+    background: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+
+  .contenido-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+    color: #080808;
+  }
+
+  aside {
+    flex-grow: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+
+  aside h1 {
+    color: #343a40;
+  }
+
+  .imagen-empresa {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .area {
+    background-color: #343a40;
+    color: #fff;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .areados {
+    background: #343a40;
+    border-radius: 8px;
+  }
+  .areados a {
+    color: #f4f4f4;
+    text-decoration: none;
+    line-height: 1.75;
+  }
+
+
+.formulario-inscripcion {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-cliente{
+    background-color: #343a40;
+    color:  #fff;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.formulario-seccion { 
+    padding: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+input[type="submit"] {
+    background-color: #37393a;
+    color: rgb(236, 228, 228);
+    border-radius: 8px;
+    cursor: pointer;/*se utiliza para cambiar la forma del cursor del ratón para indicar que un elemento es clickeable */
+   
+}
+/*Este código hará que todos los elementos input que sean de tipo text email tel submit, 
+ tengan las propiedades que se emncionan dentro*/
+input[type="text"],
+input[type="tel"],
+input[type="submit"],
+input[type="email"]
+{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.fondo{
+    background-color: rgb(124, 193, 196);
+}
+ label{
+    font-weight: bold;
+ }
+
+#ajuste{
+  padding: 20px 0 20px 40px ;
+  margin: auto;
+}
+
+ .mariano * {
+  margin: 15px;
+  padding: auto;
+}
+
+.mariano {
+  max-width: 800px;
+  margin: auto;
+}
+
+.mariano p,
+.mariano ul,
+.mariano li {
+  color: #333;
+  margin: 20px;
+}
+
+
+.sh3 {
+  background-color: #343a40;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sh2 {
+  text-align: center;
+}
+.sh3 {
+  font-size: 1em;
+}
+
+.mariano-art img {
+  max-width: 500px;
+}
+
+.imgg {
+  text-align: center;
+}
+ .bfooter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin: 0px;
+    padding: 15px 0;
+    width: 100%;
+    
+}
+
+/*  1300px */
+@media (min-width: 1301px) {
+  .area {
+      margin: 20px 20%;
+  }
+}
+
+/* Tablet en vertical */
+@media (max-width: 1024px) and (min-width: 769px) {
+  nav {
+      width: auto;
+      padding: 0 20px;
+  }
+  .area {
+      margin: 20px 10%;
+  }
+  .nav li {
+      float: none;
+      display: inline-block;
+  }
+  .nav li ul {
+      position: static;
+  }
+}
+
+/* Tablet en horizontal */
+@media (max-width: 1300px) and (min-width: 1025px) {
+  .area {
+      margin: 20px 15%;
+  }
+}
+
+/* Telefono en vertical */
+@media (max-width: 480px) {
+  header, .bheader {
+      padding: 10px 0;
+  }
+  .nav, .nav li {
+      width: 100%;
+      float: none;
+  }
+  .nav li a {
+      padding: 10px;
+      text-align: center;
+  }
+  .area {
+      margin: 10px 5%;
+      padding: 10px;
+  }
+  .bheader{
+    margin-bottom: 150px;
+  }
+}
+
+/* Telefono en horizontal */
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav li a {
+      padding: 8px 12px;
+  }
+  .area {
+      margin: 10px 5%;
+  }
+  .nav, .nav li {
+      width: 100%;
+      float: none;
+  }
+  .nav li a {
+      text-align: center;
+  }
+}
